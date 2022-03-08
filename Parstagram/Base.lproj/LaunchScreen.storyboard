@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-d0-vcX">
+                                <rect key="frame" x="79.5" y="315" width="255" height="266"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-60" translatesAutoresizingMaskIntoConstraints="NO" id="gch-49-JPC">
+                                        <rect key="frame" x="52.5" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="7sm-7v-aR4"/>
+                                            <constraint firstAttribute="width" constant="150" id="c4q-vd-bmp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-Rj-6IG">
+                                        <rect key="frame" x="0.0" y="158" width="255" height="108"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Swh-Rj-6IG" firstAttribute="top" secondItem="gch-49-JPC" secondAttribute="bottom" constant="8" symbolic="YES" id="1aV-R7-yQc"/>
+                                    <constraint firstAttribute="trailing" secondItem="gch-49-JPC" secondAttribute="trailing" constant="52.5" id="5rc-qH-C17"/>
+                                    <constraint firstAttribute="trailing" secondItem="Swh-Rj-6IG" secondAttribute="trailing" id="Mjf-8Q-Cip"/>
+                                    <constraint firstItem="Swh-Rj-6IG" firstAttribute="top" secondItem="gch-49-JPC" secondAttribute="bottom" constant="8" symbolic="YES" id="SqB-pC-JHY"/>
+                                    <constraint firstItem="gch-49-JPC" firstAttribute="top" secondItem="Aty-d0-vcX" secondAttribute="top" id="TFq-sG-dvi"/>
+                                    <constraint firstItem="Swh-Rj-6IG" firstAttribute="leading" secondItem="Aty-d0-vcX" secondAttribute="leading" id="U6j-4B-3IY"/>
+                                    <constraint firstItem="gch-49-JPC" firstAttribute="leading" secondItem="Aty-d0-vcX" secondAttribute="leading" constant="52.5" id="dJ3-nL-r1l"/>
+                                    <constraint firstAttribute="bottom" secondItem="Swh-Rj-6IG" secondAttribute="bottom" id="rli-EE-b0o"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aty-d0-vcX" secondAttribute="bottom" constant="281" id="5fN-i8-d31"/>
+                            <constraint firstItem="Aty-d0-vcX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EXp-xf-Khf"/>
+                            <constraint firstItem="Aty-d0-vcX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="HBi-z4-8Pd"/>
+                            <constraint firstItem="Aty-d0-vcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79.5" id="ROO-Su-XIj"/>
+                            <constraint firstItem="Aty-d0-vcX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eQK-LJ-QmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aty-d0-vcX" secondAttribute="trailing" constant="79.5" id="pVa-ed-gdc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60" width="60" height="60"/>
+        <image name="instagram_logo" width="255" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
